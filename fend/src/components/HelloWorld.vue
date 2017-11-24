@@ -1,14 +1,22 @@
 <template>
-  <h1>Pedestrem</h1>
+  <div>
+    <h1>Pedestrem</h1>
+    <app-map></app-map>
+  </div>
 </template>
 
 <script>
+import AppMap from '@/components/map/AppMap'
+
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    AppMap
   }
 }
 </script>
